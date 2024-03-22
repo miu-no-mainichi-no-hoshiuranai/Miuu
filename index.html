@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>随机图片 API</title>
+    <title>MIU API</title>
 </head>
 <body>
-    <h1>随机图片</h1>
+    <h1今日运势</h1>
     <img id="randomImage" src="" alt="随机图片">
     <script>
         const imageFolder = 'images'; // 图片所在的文件夹
@@ -14,7 +14,7 @@
 
         function loadRandomImage() {
             const randomIndex = Math.floor(Math.random() * imageCount) + 1;
-            const imageUrl = `${images/}/${randomIndex}.jpg`; // 图片的路径
+            const imageUrl = `${images}/${randomIndex}.jpg`; // 图片的路径
             document.getElementById('randomImage').src = imageUrl;
         }
 
