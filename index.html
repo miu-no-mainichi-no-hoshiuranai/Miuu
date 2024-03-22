@@ -1,13 +1,10 @@
-<body>
-    <h1>
-        今日运势 <input type="button" value="再来一张" onclick="reloadPage()" />
-    </h1>
-</body>
-<script type="text/javascript">
-    function reloadPage() {
-        window.location.reload()
-    }
-    var arr = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19'，'20','21','22','23','24'];
-    var imgsrc = arr[Math.floor(Math.random() * arr.length)];
-    document.write('<img src="images/' + imgsrc + '">')
-</script>
+<?php
+//初始化随机数生成器种子，这行代码也可以删除
+$seed = time();
+//获取随机数
+$num = rand(1,24);
+//拼接图片地址
+$picpath = "https://github.com/miu-no-mainichi-no-hoshiuranai/Miuu/tree/main/images".$num.".jpg";
+//重定位到图片
+die(header("Location: $picpath"));
+?>
