@@ -2,11 +2,7 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>让miu告诉你</title>
-</head>
-<body onload="displayRandomImage()">
-    <div id="imageContainer"></div>
-
+    <title>miu抽运势</title>
     <script type="text/javascript">
         function displayRandomImage() {
             var images = [];
@@ -19,8 +15,13 @@
 
             var imageElement = document.createElement('img');
             imageElement.src = 'src/' + imgsrc;
-            document.getElementById('imageContainer').appendChild(imageElement);
+
+            document.body.appendChild(imageElement);
         }
+
+        window.onload = displayRandomImage;
     </script>
+</head>
+<body>
 </body>
 </html>
