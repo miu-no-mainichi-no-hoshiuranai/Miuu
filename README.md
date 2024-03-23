@@ -1,1 +1,1 @@
-点击抽取今日运势 https://miu-no-mainichi-no-hoshiuranai.github.io/Miuu/
+点击抽取今日运势 https://api227miu.keepsmiling227.fun/
