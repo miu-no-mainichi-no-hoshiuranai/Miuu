@@ -23,7 +23,7 @@ window.onload = function() {
     'https://gitee.com/miu-no-mainichi-no-hoshiuranai/Miuu/raw/main/src/21.webp',
     'https://gitee.com/miu-no-mainichi-no-hoshiuranai/Miuu/raw/main/src/22.webp',
     'https://gitee.com/miu-no-mainichi-no-hoshiuranai/Miuu/raw/main/src/23.webp',
-    'https://gitee.com/miu-no-mainichi-no-hoshiuranai/Miuu/raw/main/src/24.webp',
+    'https://gitee.com/miu-no-mainichi-no-hoshiuranai/Miuu/raw/main/src/24.webp'
     ];
     var randomImage = images[Math.floor(Math.random() * images.length)];
     document.getElementById('random-image').src = randomImage;
